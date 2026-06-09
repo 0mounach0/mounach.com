@@ -31,6 +31,7 @@
 - Initial commit created from the downloaded static Framer template.
 - Homepage positioning task started: hero now presents Mouad Mounach as a full-stack developer building SaaS products, automation systems, and AI-powered web tools.
 - Homepage services task completed: the four services are now SaaS & Web Apps, AI & Automation, Business Tools & Integrations, and Deployment & Technical Ownership.
+- Template cleanup task completed: the floating `Get Template` button is hidden across all static HTML pages with a shared CSS rule.
 
 ## Open Questions
 
