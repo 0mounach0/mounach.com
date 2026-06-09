@@ -33,6 +33,7 @@
 - Homepage services task completed: the four services are now SaaS & Web Apps, AI & Automation, Business Tools & Integrations, and Deployment & Technical Ownership.
 - Template cleanup task completed: the floating `Get Template` button is hidden across all static HTML pages with a shared CSS rule.
 - Template cleanup extended: hidden the additional Framer fixed promo/release widget via `.framer-1fin31n-container`.
+- Homepage About + stats task completed using CV context without making it read like a traditional CV: About now mentions full-stack web development, enterprise Angular platforms, SaaS-style products, APIs, automation workflows, deployments, and ownership across frontend/backend/database/DevOps/testing/cloud. Stats now use `5+ Years Experience`, `A-Z Product Delivery`, and `AI+ Automation & AI Tools`.
 
 ## Open Questions
 
