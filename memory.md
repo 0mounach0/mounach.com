@@ -36,6 +36,7 @@
 - Homepage About + stats task completed using CV context without making it read like a traditional CV: About now mentions full-stack web development, enterprise Angular platforms, SaaS-style products, APIs, automation workflows, deployments, and ownership across frontend/backend/database/DevOps/testing/cloud. Stats now use `5+ Years Experience`, `A-Z Product Delivery`, and `AI+ Automation & AI Tools`.
 - Homepage copy pass completed: changed remaining homepage template copy toward Mouad's Web/SaaS/AI automation positioning, including featured work labels, how-I-work section, FAQ headings, build notes, contact CTA, email, phone, footer credits, and homepage SEO/share metadata.
 - Framer hydration finding: the downloaded export loads a remote Framer bundle that rehydrates visible content back to old template text in the browser. The homepage now uses a safer JSON-driven `mouad-copy-override` script with a MutationObserver to re-apply Mouad's copy after Framer hydration across homepage sections.
+- Hero visual fix: the original Framer hero text boxes could not handle the new wording without compressing/overlapping. Added `mouad-hero-layout-fix` CSS and `mouad-hero-layout-script` to hide the original desktop hero text boxes and render a clean desktop overlay: `Mouad Mounach / Web` on the left, `Developer` plus SaaS/automation/AI subtitle on the right.
 
 ## Open Questions
 
