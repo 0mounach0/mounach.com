@@ -35,7 +35,7 @@
 - Template cleanup extended: hidden the additional Framer fixed promo/release widget via `.framer-1fin31n-container`.
 - Homepage About + stats task completed using CV context without making it read like a traditional CV: About now mentions full-stack web development, enterprise Angular platforms, SaaS-style products, APIs, automation workflows, deployments, and ownership across frontend/backend/database/DevOps/testing/cloud. Stats now use `5+ Years Experience`, `A-Z Product Delivery`, and `AI+ Automation & AI Tools`.
 - Homepage copy pass completed: changed remaining homepage template copy toward Mouad's Web/SaaS/AI automation positioning, including featured work labels, how-I-work section, FAQ headings, build notes, contact CTA, email, phone, footer credits, and homepage SEO/share metadata.
-- Hero section follow-up: added a targeted `mouad-hero-copy-override` script because the Framer runtime can rehydrate the visible hero with old template text (`Duncan Robert`, `Digital Designer`, and the US-based designer subtitle). The override only replaces those exact hero text values.
+- Framer hydration finding: the downloaded export loads a remote Framer bundle that rehydrates visible content back to old template text in the browser. The homepage now uses a safer JSON-driven `mouad-copy-override` script with a MutationObserver to re-apply Mouad's copy after Framer hydration across homepage sections.
 
 ## Open Questions
 
