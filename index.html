@@ -266,7 +266,36 @@
 	<link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/react.BL9nQ_dV.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/rolldown-runtime.hBrq4iGT.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/motion.D75QpdZD.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/framer.RNroTCoh.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/shared-lib.CVHIelPQ.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/Phosphor.B8LpdByw.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/L1yEr8kIk.BcsTiZSz.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/XQy7SVc02.BdMotN8e.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/EBQDvGnCv.DM_mUmRj.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/d6fEIF46mMj3txsk_SZSc31LVDyJjo-1l6OyFEhHpKA.DlXSVfEk.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/UezruUh9E.C79iAXmC.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/ZMWq6ryX_.DTauP4QP.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/TTqvVnbYq.DqjKVbsM.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/djOUw0pzb.Bptj_1It.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/ZRloE2uUu.BWBg1LAy.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/augiA20Il.D4z64f6I.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/W4OPXwR7T.CzR2bPu8.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/ZEOox1xX9.D2WqneGT.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/vW1JQClGO.CGStE4IG.mjs"><link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/l9KTJXLB2.DoAvL-B9.mjs"><script type="module" async="" data-framer-bundle="main" fetchpriority="low" src="https://framerusercontent.com/sites/5hLAAEC4yiJjY8Dae61UdM/script_main.CfXreL1e.mjs"></script><div id="svg-templates" style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict" aria-hidden="true">
 </div>
 	<!-- Start of bodyEnd -->
-    
+    <script id="mouad-hero-copy-override">
+      (() => {
+        const replacements = new Map([
+          ["DUNCAN ROBERT", "Mouad Mounach"],
+          ["Duncan Robert", "Mouad Mounach"],
+          ["DIGITAL", "FULL-STACK"],
+          ["DESIGNER", "DEVELOPER"],
+          ["digital", "full-stack"],
+          ["designer", "developer"],
+          ["I'm a US-based digital designer and Framer developer", "I build SaaS products, automation systems, and AI-powered web tools."],
+          ["I’m a US-based digital designer and Framer developer", "I build SaaS products, automation systems, and AI-powered web tools."]
+        ]);
+
+        function replaceHeroCopy() {
+          const hero = document.querySelector("#hero") || document;
+          const walker = document.createTreeWalker(hero, NodeFilter.SHOW_TEXT);
+          const nodes = [];
+          while (walker.nextNode()) nodes.push(walker.currentNode);
+          for (const node of nodes) {
+            const value = node.nodeValue.trim();
+            if (replacements.has(value)) node.nodeValue = node.nodeValue.replace(value, replacements.get(value));
+          }
+        }
+
+        replaceHeroCopy();
+        window.addEventListener("load", replaceHeroCopy);
+        setTimeout(replaceHeroCopy, 250);
+        setTimeout(replaceHeroCopy, 1000);
+      })();
+    </script>
     <!-- End of bodyEnd -->
 
 
