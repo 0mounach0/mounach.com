@@ -26,6 +26,11 @@
 - A floating `Get Template` button is still present and should likely be removed.
 - Navigation/status includes `Available for work`.
 
+## Completed Tasks
+
+- Initial commit created from the downloaded static Framer template.
+- Homepage positioning task started: hero now presents Mouad Mounach as a full-stack developer building SaaS products, automation systems, and AI-powered web tools.
+
 ## Open Questions
 
 - What exact English positioning should the hero use for Mouad?
