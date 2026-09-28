@@ -18,6 +18,14 @@ python3 -m http.server 4173 --bind 127.0.0.1
 
 Open [http://127.0.0.1:4173](http://127.0.0.1:4173).
 
+## Review Deployment
+
+The current Dokploy review build is available at:
+
+- [http://mouad-portfolio-51-222-137-113.traefik.me](http://mouad-portfolio-51-222-137-113.traefik.me)
+
+This temporary URL is HTTP-only. It does not replace the existing `mounach.com` site.
+
 ## Routes
 
 - `/` - homepage

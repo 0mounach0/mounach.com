@@ -11,7 +11,7 @@ Last updated: 2026-09-28
 - [x] Removed visible Framer template promotion widgets.
 - [x] Added a stable homepage copy override after Framer hydration and a desktop hero layout fix.
 - [x] Added canonical AI context files and container deployment configuration.
-- [/] Deploy the current review version through Dokploy and verify its public route.
+- [x] Deployed the current review version through Dokploy and verified its public route and health check.
 - [ ] Replace fictional template projects with accurate case studies.
 - [ ] Finish About, Projects, Blogs/Insights, project-detail, and error-page content.
 - [ ] Replace or remove placeholder social links and confirm public contact details.
@@ -25,6 +25,18 @@ Last updated: 2026-09-28
 - No package install or build is required for local development.
 - Local preview command: `python3 -m http.server 4173 --bind 127.0.0.1`
 - Deployment image: Nginx serving the repository as static files.
+
+## Current Deployment
+
+- GitHub repository: `https://github.com/0mounach0/mounach.com` (public).
+- Initial deployed source commit: `b9e8495`.
+- Dokploy project: `Mouad Portfolio` (`wNUSKuM11TRhM3AdzCUKT`).
+- Dokploy environment: `production` (`F7CihSOOndEzZu40Ot1dC`).
+- Dokploy Compose service: `Portfolio Web` (`NitNxvOFqR-3Bv1Qd53Ew`).
+- Temporary review URL: `http://mouad-portfolio-51-222-137-113.traefik.me/`.
+- Health endpoint: `http://mouad-portfolio-51-222-137-113.traefik.me/healthz`.
+- Verified on 2026-09-28: health, homepage, About, Projects, and a nested project route returned HTTP 200.
+- `mounach.com` remains on the pre-existing Hostinger/WordPress site and was not modified.
 
 ## Portfolio Direction
 
@@ -53,6 +65,9 @@ These values came from the existing customized homepage. Reconfirm them before a
 - 2026-09-28: Deploy the present export as an interim review version, not as proof of Framer independence.
 - 2026-09-28: Remove the Framer dependency through a controlled rebuild into maintainable locally owned source code and assets; do not treat opaque mirrored Framer bundles as the long-term solution.
 - 2026-09-28: Serve the interim static export from an unprivileged Nginx container in Dokploy.
+- 2026-09-28: Publish the portfolio source as `0mounach0/mounach.com`; the repository contains no runtime secrets.
+- 2026-09-28: Keep the first Dokploy deployment isolated from StoreForge and the existing `mounach.com` site; use a temporary HTTP review hostname until the final domain is chosen.
+- 2026-09-28: Use Dokploy raw Compose mode for this service. The initial provider-backed attempt failed before build because no GitHub provider was attached; raw Compose then built and deployed successfully from the public Git repository.
 
 ## Framer Dependency Audit
 
@@ -69,6 +84,7 @@ These values came from the existing customized homepage. Reconfirm them before a
 - Some social links are placeholders or still reference the template author.
 - The contact form has not been validated as a working, independently owned submission flow.
 - Current production-readiness is limited by the remaining Framer CDN/runtime dependency.
+- The temporary `traefik.me` review URL is HTTP-only and is not the final production hostname.
 
 ## Open Questions
 
